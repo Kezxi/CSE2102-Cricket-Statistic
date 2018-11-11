@@ -10,8 +10,9 @@
     } else {
 
     if (isset($_GET['login']))  {
-        if (isset($_POST['username'])) $username = $_POST['username'];
-        if (isset($_POST['password']))  $password = $_POST['password']; 
+        if (isset($_POST['username'])) 
+			$username = $_POST['username'];
+			$password= md5($_POST['password']);
 		
         $result = query("SELECT * FROM users WHERE username = '{$username}' AND password = '{$password}' LIMIT 1");
         if (!empty($result)) {
@@ -34,6 +35,7 @@
 <html>
 <head>
 <meta charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles/style.css">
 <title>Cricket Statistics App</title>
 </head>
@@ -41,13 +43,13 @@
 <?php if (!logged_in()){
     if (isset($_GET['message'])) echo $_GET['message'];
 ?>
-    <div align="center">
+    <div class="container" align="center">
         <h1>Welcome to Cricket Statistics</h1>
 		<div class= "img">
-		<img src="assets/avatar.jpg" alt="Avatar" class="Avatar">
+		<img src="assets/avatar.jpg" alt="Avatar" class="Avatar" width="150px">
 		</div>
         <h2>Login</h2>
-		<div class="container">
+		<div>
         <form action="?login=yes" method="post"  name="login">
         <label><b>Username:</b></label></br>
 		<input name="username" placeholder="Enter Username" type="text" /></br>
