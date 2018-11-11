@@ -1,0 +1,28 @@
+	body{
+		background-color: white;
+	}
+	
+	input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    box-sizing: border-box;
+	}
+	
+	.img{
+    text-align: center;
+    margin: 20px 0 15px 0;
+	}
+
+	img.avatar {
+    width: 20%;
+    border-radius: 25%;
+	}
+	
+	.cancel, a {
+	background-color: #892323;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    width: 10%;
