@@ -1,7 +1,8 @@
 <?php
-require('connect.php');
-$id=$_REQUEST['cid'];
-$query = "DELETE FROM players WHERE id=$id"; 
-$result = mysqli_query($con,$query) or die ( mysqli_error());
-header("Location: admin.php"); 
+include("connect.php");
+ 
+$id = $_GET['pid'];
+ 
+$result = mysqli_query($mysqli, "DELETE FROM players WHERE pid=$id");
+header("Location:admin.php");
 ?>
