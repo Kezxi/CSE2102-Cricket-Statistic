@@ -3,13 +3,8 @@
 	{ 
 	?>
 
- <html>
-<head>
-</head>
-<body>
-<h2>Welcome!</h2>
-</body>
-</html>
+<h1>Welcome!</h1> 
+<a href="?logout=yes">logout</a>
 <?php 
 	}
 ?>

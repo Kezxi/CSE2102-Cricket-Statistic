@@ -1,6 +1,8 @@
 <?php
-define("db_server", "localhost");
-define("db_user", "root");
-define("db_password", "");
-define("db_name", "cricket_stats"); 
+$db_server = 'localhost';
+$db_user = 'root';
+$db_password = '';
+$db_name = 'cricket_stats'; 
+
+$mysqli = mysqli_connect($db_server, $db_user, $db_password, $db_name); 
 ?>

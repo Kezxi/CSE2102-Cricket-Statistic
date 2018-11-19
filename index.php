@@ -1,6 +1,6 @@
 <?php
 	session_start();
-    require_once("functions.php");
+    require("functions.php");
 ?>
 <?php
     if (isset($_GET['logout'])) {
@@ -63,9 +63,10 @@
 <?php
 }
     else {
-    if (isset($_GET['message'])) echo $_GET['message'];
+    if (isset($_GET['message'])) 
+	echo $_GET['message'];
     ?>
-    <a href="?logout=yes">logout</a><br />
+
 
 <?php
 	if ($_SESSION['type'] == "admin") 
