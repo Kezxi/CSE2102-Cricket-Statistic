@@ -1,10 +1,19 @@
 
 <html>
 <head>
+<link rel="stylesheet" href="styles/style.css">
 <title>New Player</title>
 </head>
+<style>
+.btn  {
+	background-color: #892323;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+	}
+</style>
 <body>
-	<form method="post" action="php.php" >
+	<form method="post" action="add_player.php" >
 		<div class="insert">
 			<label>First Name</label>
 			<input type="text" name="fname" value="">
