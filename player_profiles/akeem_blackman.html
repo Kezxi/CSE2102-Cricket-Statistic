@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> Player Profile </title>
+
+    <style>
+
+      body
+      {
+				font-family: sans-serif;
+				font-size: 11pt;
+				background-image: url(../backgrounds/all_rounder_bg.jpg);
+				background-size:100% 100%;
+				background-attachment: fixed;
+			}
+
+      #table
+      {
+      position: absolute;
+      width: 80%;
+      height: 35%;
+      top: 25%;
+      margin-left: 10%;
+      margin-right: 10%;
+
+      }
+
+      table, th, td
+      {
+        border: 1px solid black;
+        border-collapse:collapse;
+        opacity: 0.85;
+      }
+
+      th, td
+      {
+        padding: 1%;
+        text-align: center;
+        color: ffffff;
+      }
+
+
+      #header
+      {
+        background:#0c0082
+
+      }
+
+      h1{
+          color: white;
+        }
+
+      tr:nth-child(even)
+       {
+         background: #ffd600
+
+       }
+
+      tr:nth-child(odd)
+      {
+        background: #fff00d
+
+      }
+
+
+      header
+      {
+
+        width: 80%;
+        position: fixed;
+
+
+        height:16%;
+
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 1%;
+      }
+
+      #bowling_stats_button
+      {
+
+        position:fixed;
+        right:10%;
+      }
+
+      #batting_stats_button
+      {
+        position:fixed;
+
+        left:10%;
+      }
+
+
+
+      .container{
+        width:100%;
+        height: 100%;
+        overflow:hidden;
+      }
+
+      img {
+          border-radius:50%;
+          height: 100px;
+          width: 100px;
+          margin-top:-10%;
+
+      }
+
+
+
+      </style>
+  </head>
+  <body>
+
+    <header>
+
+     <section id="batting_stats_button">
+        <ul>
+          <li><a href="../players_batting_tables/akeem_blackman.php"><img src="../images/batting_stats.png"></a></li>
+        </ul>
+     </section>
+
+     <section id="bowling_stats_button">
+    				 <ul>
+    					 <li><a href="../players_bowling_tables/akeem_blackman.php"><img src="../images/bowling_stats.png"></a></li>
+    				 </ul>
+     </section>
+
+    </header>
+
+    <table id="table" align="center">
+      <tr>
+        <td id="header" colspan="11"><h1> Akeem Blackman </h1></td>
+      </tr>
+
+      <tr id="columns">
+        <th>Birthday(Age)</th>
+        <th>November 21, 1997(age 20)</th>
+      </tr>
+
+      <tr>
+        <th>Height</th>
+        <th>5 ft 6 1/2 in</th>
+      </tr>
+
+      <tr>
+        <th>Weight</th>
+        <th>120 lb</th>
+      </tr>
+
+      <tr>
+        <th>Role</th>
+        <th>Opening Batsman</th>
+      </tr>
+
+      <tr>
+        <th>Batting</th>
+        <th>Right-Handed</th>
+      </tr>
+
+      <tr>
+        <th>Bowling</th>
+        <th>Right-arm off break</th>
+      </tr>
+
+      <tr>
+        <th>Interest</th>
+        <th>Cricket & Dancehall Music</th>
+      </tr>
+
+  </body>
+</html>
